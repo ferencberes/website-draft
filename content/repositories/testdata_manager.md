@@ -1,8 +1,9 @@
 +++
 date = "2015-10-08T22:41:20+02:00"
 draft = true
-title = "testdata_manager"
+title = "Testdata manager"
 slug = "testdata-manager"
+project_url = "https://github.com/ferencberes/testdata-manager"
 
 +++
 

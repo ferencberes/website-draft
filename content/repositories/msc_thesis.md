@@ -1,8 +1,9 @@
 +++
 date = "2015-10-08T22:41:20+02:00"
 draft = true
-title = "msc-thesis"
+title = "MSc thesis repository"
 slug = "msc-thesis"
+project_url = "https://github.com/ferencberes/msc-thesis"
 
 +++
 
