@@ -3,9 +3,10 @@
 {{ partial "navbar.html" . }}
 <div class="container">
     <div class="row">
-        <!-- Sidebar -->
-        <div class="col-md-3">
-        {{ partial "menu.html" . }}
+        <div class="col-md-9">
+        {{ range first 10 .Data.Pages }}
+            {{ .Render "summary" }}
+        {{ end }}
         </div>
     </div>
 {{ partial "footer.copyright.html" . }}
