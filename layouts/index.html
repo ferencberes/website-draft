@@ -1,16 +1,28 @@
 {{ partial "header.html" . }}
-<body>
-{{ partial "navbar.html" . }}
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+{{ partial "home_navbar.html" . }}
 
-<div class="container">
-    <div class="row">
-        {{ partial "masonry_grid.html" . }}
-    </div>
-    <div class="row">
-        <div class="headings_section">
-        {{ partial "headings.html"  . }}
-        </div>
-    </div>
+	<!--header-->
+	<header class="intro">
+		{{ partial "intro.html" . }}
+	</header>
+
+	<!-- About Section -->
+	<section id="about" class="container content-section text-center">
+		{{ partial "about.html" . }}
+	</section>
+
+	<!-- Roadmap Section -->
+	<section id="roadmap" class="container content-section text-center">
+		{{ partial "roadmap.html" . }}
+	</section>
+
+	<!-- Contact Section -->
+	<section id="contact" class="container content-section text-center">
+		{{ partial "contact.html" . }}
+	</section>
+
+<!-- Footer -->
 {{ partial "footer.copyright.html" . }}
-</div>
+
 {{ partial "footer.html" . }}
