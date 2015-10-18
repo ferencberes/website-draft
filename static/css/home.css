@@ -1,15 +1,9 @@
-/*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 body {
     width: 100%;
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #000;
-    background-color: rgb(51, 102, 153);
+    background-color: rgb(71, 117, 163);
 }
 
 html {
@@ -58,7 +52,7 @@ a:focus {
 }
 
 .row {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .light {
@@ -70,7 +64,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color:  rgb(51, 102, 153);
+    background-color: rgb(51, 102, 153);
 }
 
 .navbar-custom .navbar-brand {
@@ -151,11 +145,11 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/winter-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/winter-bg.jpg) no-repeat center center scroll;
     background-color: #000;
+    background-size: 100% 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
 }
 
@@ -264,27 +258,21 @@ a:focus {
     }
 }
 
-.content-section {
-    padding-top: 100px;
-}
-
-/*
-.download-section {
+.contact-section {
+    display: table;
     width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    padding: 35px 0;
+    color: #000;
+    background: url(../img/panorama.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
-*/
-#map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
+
+.contact-section a {
+    color: rgb(255, 51, 0);
 }
 
 @media(min-width:767px) {
@@ -340,11 +328,17 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding: 50px 0;
+    padding: 5px 0;
+    text-align: center;
+    border-top: 1px solid rgb(255, 51, 0);
 }
 
 footer p {
     margin: 0;
+}
+
+footer a {
+    color: rgb(255, 51, 0);
 }
 
 ::-moz-selection {
