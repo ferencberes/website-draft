@@ -1,9 +1,31 @@
+/*
+:root {
+  --title-color: rgb(255, 92, 51);
+  --dark-highlight-color: rgb(255, 51, 0);
+  --light-highlight-color: rgb(255, 112, 77);
+  --dark-bg-color: rgb(51, 102, 153);
+  --light-bg-color: rgb(71, 117, 163);
+  --main-bg-picture: url(../img/winter-bg.jpg);
+  --contact-bg-picture: url(../img/panorama.jpg);
+}
+*/
+
+:root {
+  --title-color: rgb(77, 255, 210);
+  --dark-highlight-color: rgb(0, 204, 153);
+  --light-highlight-color: rgb(77, 255, 210);
+  --dark-bg-color: rgb(192, 192, 165);
+  --light-bg-color: rgb(203, 203, 180);
+  --main-bg-picture: url(../img/winter-bg.jpg);
+  --contact-bg-picture: url(../img/panorama.jpg);
+}
+
 body {
     width: 100%;
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #000;
-    background-color: rgb(71, 117, 163);
+    background-color: var(--light-bg-color);
 }
 
 html {
@@ -64,7 +86,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: rgb(51, 102, 153);
+    background-color: var(--dark-bg-color);
 }
 
 .navbar-custom .navbar-brand {
@@ -98,7 +120,7 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgb(255, 51, 0);
+    color: var(--dark-highlight-color);
     background-color: transparent;
 }
 
@@ -113,11 +135,11 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgb(255, 112, 77);
+    background-color: var(--light-highlight-color);
 }
 
 .navbar-custom .nav li.active a:hover {
-    color: rgb(255, 51, 0);
+    color: var(--dark-highlight-color);
 }
 
 @media(min-width:768px) {
@@ -133,8 +155,8 @@ a:focus {
 
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        border-bottom: 1px solid rgb(255, 51, 0);
-        background:  rgb(51, 102, 153);
+        border-bottom: 1px solid var(--dark-highlight-color);
+        background:  var(--dark-bg-color);
     }
 }
 
@@ -145,7 +167,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/winter-bg.jpg) no-repeat center center scroll;
+    background: var(--main-bg-picture) no-repeat center center scroll;
     background-color: #000;
     background-size: 100% 100%;
     -webkit-background-size: cover;
@@ -160,12 +182,12 @@ a:focus {
 
 .intro .intro-body .brand-heading {
     font-size: 40px;
-    color: rgb(255, 92, 51);
+    color: var(--title-color);
 }
 
 .intro .intro-body .intro-text {
     font-size: 18px;
-    color: rgb(255, 51, 0);
+    color: var(--dark-highlight-color);
 }
 
 @media(min-width:768px) {
@@ -188,11 +210,11 @@ a:focus {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid rgb(255, 51, 0);
+    border: 2px solid var(--dark-highlight-color);
     border-radius: 100%!important;
     font-size: 40px;
-    color: rgb(255, 51, 0);
-    background: 0 0;
+    color: var(--dark-highlight-color);
+    background: var(--dark-bg-color);
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -201,8 +223,8 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: rgb(255, 51, 0);
-    background: rgb(255, 112, 77);
+    color: var(--dark-highlight-color);
+    background: var(--light-highlight-color);
 }
 
 .btn-circle i.animated {
@@ -263,7 +285,7 @@ a:focus {
     width: 100%;
     padding: 35px 0;
     color: #000;
-    background: url(../img/panorama.jpg) no-repeat center center scroll;
+    background: var(--contact-bg-picture) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -272,7 +294,7 @@ a:focus {
 }
 
 .contact-section a {
-    color: rgb(255, 51, 0);
+    color: var(--dark-highlight-color);
 }
 
 @media(min-width:767px) {
@@ -292,17 +314,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 2px solid rgb(255, 51, 0);
-    color: rgb(255, 51, 0);
-    background-color: transparent;
+    border: 2px solid var(--dark-highlight-color);
+    color: var(--dark-highlight-color);
+    background-color: var(--dark-bg-color);
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 2px solid rgb(255, 51, 0);
+    border: 2px solid var(--dark-highlight-color);
     outline: 0;
-    color: rgb(255, 51, 0);
-    background-color: rgb(255, 112, 77);
+    color: var(--dark-highlight-color);
+    background-color: var(--light-highlight-color);
 }
 
 ul.banner-social-buttons {
@@ -330,7 +352,7 @@ ul.banner-social-buttons {
 footer {
     padding: 5px 0;
     text-align: center;
-    border-top: 1px solid rgb(255, 51, 0);
+    border-top: 1px solid var(--dark-highlight-color);
 }
 
 footer p {
@@ -338,7 +360,7 @@ footer p {
 }
 
 footer a {
-    color: rgb(255, 51, 0);
+    color: var(--dark-highlight-color);
 }
 
 ::-moz-selection {
