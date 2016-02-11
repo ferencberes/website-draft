@@ -280,10 +280,15 @@ a:focus {
     }
 }
 
+.content-msg {
+    text_align: center;
+}
+
 .contact-section {
     display: table;
     width: 100%;
     padding: 35px 0;
+    margin-bottom: 80px;
     color: #000;
     background: var(--contact-bg-picture) no-repeat center center scroll;
     background-color: #000;
