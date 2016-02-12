@@ -20,11 +20,15 @@
   </nav>
 </header>
 </body>
-
 {{ partial "navbar.html" . }}
 
 <main class="content" role="main">
+
+
+
+
   <article class="post {{ .Section }}">
+
     <header class="post-header">
         <h1 class="post-title">{{.Title}}</h1>
         <small>{{.Description}}</small>
@@ -45,7 +49,9 @@
       {{ .Content }}
     </section>
 
+
   <footer class="post-footer">
+
 
     {{if .Site.Params.logo}}
     <figure class="author-image">
@@ -92,7 +98,6 @@
 </article>
 
 </main>
-
 {{ partial "footer.copyright.html" . }}
 
 {{ partial "footer.html" . }}

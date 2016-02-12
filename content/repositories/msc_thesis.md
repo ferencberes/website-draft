@@ -136,22 +136,23 @@ The former command also gives a hint about the full variable setting.
 Usage: <input_lgf> <output_folder> <start_time> <delta> <centrality_prev_interval_count> <combine_factor> <graph_stat_prev_interval_count> <enable_multi_edges> <max_num_of_steps> <topK> OPTIONS:(-beta, -degree, -pr, -salsa)
 ```
 
-Here you have to set several parameters.
-   * **input_lgf:** absolute path for input graph in *.lgf* format
-   * **output_folder:** absolute path for the output directory
-   * **start_time:** the graph analysis will start from this Unix epoch timestamp
-   * **delta_time:** the length of the time intervals in seconds 
-   * **centrality_prev_interval_count:** compute centrality with the edges of the last given number of intervals 
-   * **combine_factor:** set the default -1 value.
-   * **graph_stat_prev_interval_count:** set the default -1 value
-   * **enable_multi_edges:** enable multiple edges *(true/false)*
-   * **max_num_of_steps:** 
-   * **topK:** extract *topK* central nodes for each measure
-   * **centrality measures:** you can set which measures are computed
-       * **degree:** indegree and outdegree
-       * **pr:** PageRank (10 iteration, dampening factor is 0.85)
-       * **salsa:** SALSA authority and hub scores (10 iteration)
-       * **beta:** negative beta measure or "Markovian indegree" (For details see this [article](http://arxiv.org/abs/1308.2140))
+Here you have to set several parameters:
+
+  * **input_lgf:** absolute path for input graph in *.lgf* format
+  * **output_folder:** absolute path for the output directory
+  * **start_time:** the graph analysis will start from this Unix epoch timestamp
+  * **delta_time:** the length of the time intervals in seconds 
+  * **centrality_prev_interval_count:** compute centrality with the edges of the last given number of intervals 
+  * **combine_factor:** set the default -1 value.
+  * **graph_stat_prev_interval_count:** set the default -1 value
+  * **enable_multi_edges:** enable multiple edges *(true/false)*
+  * **max_num_of_steps:** 
+  * **topK:** extract *topK* central nodes for each measure
+  * **centrality measures:** you can set which measures are computed
+    * **degree:** indegree and outdegree
+    * **pr:** PageRank (10 iteration, dampening factor is 0.85)
+    * **salsa:** SALSA authority and hub scores (10 iteration)
+    * **beta:** negative beta measure or "Markovian indegree" (For details see this [article](http://arxiv.org/abs/1308.2140))
 
 For *Enron* graph execute the following command.
 ```batch
