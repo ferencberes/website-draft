@@ -3,6 +3,14 @@
           box-sizing: border-box;
 }
 
+:root {
+  --yellow: rgb(255, 255, 102);
+  --red: rgb(255, 77, 77);
+  --blue: rgb(128, 128, 255);
+  --green: rgb(92, 214, 92);
+  --orange: rgb(255, 112, 77);
+}
+
 body { font-family: sans-serif; }
 
 .masonry-content h2 {
@@ -73,19 +81,19 @@ body { font-family: sans-serif; }
 
 .sztaki {
   width: 260px;
-  height: 140px;
-  background-color: rgb(255, 255, 102); 
+  height: 120px;
+  background-color: var(--blue); 
 }
 
 .sztaki--gigante {
    width: 300px;
-   height: 270px;
+   height: 280px;
 }
 
 .msc {
   width: 240px;
-  height: 140px;
-  border-color: hsla(0, 0%, 0%, 0.5);
+  height: 120px;
+  background-color: var(--yellow);
 }
 
 .msc--gigante {
@@ -95,8 +103,8 @@ body { font-family: sans-serif; }
 
 .bsc {
   width: 240px;
-  height: 100px;
-  background-color: rgb(255, 112, 77);
+  height: 80px;
+  background-color: var(--yellow);
 }
 
 .bsc--gigante {
@@ -106,8 +114,8 @@ body { font-family: sans-serif; }
 
 .praudit {
   width: 200px;
-  height: 100px;
-  background-color: rgb(92, 214, 92);
+  height: 80px;
+  background-color: var(--blue);
 }
 
 .praudit--gigante {
@@ -117,8 +125,8 @@ body { font-family: sans-serif; }
 
 .ejg {
   width: 200px;
-  height: 142px;
-  border-color: hsla(0, 0%, 0%, 0.5);
+  height: 120px;
+  background-color: var(--yellow);
 }
 
 .ejg--gigante {
@@ -128,8 +136,8 @@ body { font-family: sans-serif; }
 
 .bsi {
   width: 170px;
-  height: 100px;
-  background-color: rgb(255, 112, 77);
+  height: 90px;
+  background-color: var(--orange);
 }
 
 .bsi--gigante {
@@ -138,20 +146,20 @@ body { font-family: sans-serif; }
 }
 
 .bme {
-  width: 200px;
-  height: 140px;
-  background-color: rgb(92, 214, 92);
+  width: 250px;
+  height: 120px;
+  background-color: var(--red);
 }
 
 .bme--gigante {
   width: 300px;
-  height: 200px;
+  height: 210px;
 }
 
 .prog_lang {
   width: 280px;
-  height: 100px;
-  background-color: rgb(255, 255, 102); 
+  height: 90px;
+  background-color: var(--green);
 }
 
 .prog_lang--gigante {
@@ -161,11 +169,23 @@ body { font-family: sans-serif; }
 
 .distrib {
   width: 240px;
-  height: 100px;
-  background-color: rgb(128, 128, 255);
+  height: 90px;
+  background-color: var(--green);
 }
 
 .distrib--gigante {
   width: 280px;
-  height: 250px;
+  height: 290px;
 }
+/*
+.almakorte {
+  width: 240px;
+  height: 190px;
+  background-color: rgb(128, 128, 255);
+}
+
+.almakorte--gigante {
+  width: 280px;
+  height: 290px;
+}
+*/
